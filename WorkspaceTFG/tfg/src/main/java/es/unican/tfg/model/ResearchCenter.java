@@ -46,7 +46,6 @@ public class ResearchCenter implements Serializable{
 	@Embedded
 	private ContactData contactInfo;
 	
-	
 	@ManyToMany(mappedBy="participants", cascade = { CascadeType.ALL })
 	private List<Experiment> experiments;
 
